@@ -1,4 +1,4 @@
-package ru.hcc.services;
+package ru.hcc.jokesapp.services;
 
 import guru.springframework.norris.chuck.ChuckNorrisQuotes;
 import org.springframework.stereotype.Service;
@@ -12,7 +12,7 @@ public class JokesServiceImpl implements JokesService {
         return chuckNorrisQuotes.getRandomQuote();
     }
 
-    public JokesServiceImpl(ChuckNorrisQuotes chuckNorrisQuotes) {
-        this.chuckNorrisQuotes = chuckNorrisQuotes;
+    public JokesServiceImpl() {
+        this.chuckNorrisQuotes = new ChuckNorrisQuotes();
     }
 }
