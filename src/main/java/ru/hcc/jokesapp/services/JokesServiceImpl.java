@@ -12,7 +12,7 @@ public class JokesServiceImpl implements JokesService {
         return chuckNorrisQuotes.getRandomQuote();
     }
 
-    public JokesServiceImpl() {
-        this.chuckNorrisQuotes = new ChuckNorrisQuotes();
+    public JokesServiceImpl(ChuckNorrisQuotes chuckNorrisQuotes) {
+        this.chuckNorrisQuotes = chuckNorrisQuotes;
     }
 }
